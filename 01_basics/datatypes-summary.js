@@ -35,3 +35,35 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// Memory Stack and Heap 
+// Primitive = stack (copy) , Reference = heap (reference)
+
+let name ="divyraj"
+let name2 = name;
+
+console.log(name2);
+
+name2 = "abhishek"
+console.log(name);
+console.log(name2);
+
+// reference
+
+let myObj1 = {
+    email:"fake@gmail.com",
+    name:"bhaskar"
+}
+
+let myObj2 = myObj1;
+
+console.log(myObj1)
+console.log(myObj2)
+
+myObj2.email= "desi123@gmail.com"
+
+console.log(myObj1)
+console.log(myObj2)
+
+// obj2 ka value bhi change karoge to automatically 1 ka bhi hojayega.
