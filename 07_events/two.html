@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <button id="stop">Stop</button>
+</head>
+<body>
+    <h1>chai or code</h1>
+</body>
+<script>
+
+    const changeText = function(){
+
+        document.querySelector('h1').innerHTML = "Dk is fabulous tea drinker"
+    }
+
+
+
+  const changeMe =   setTimeout(changeText,2000)
+  
+  document.querySelector('#stop').addEventListener('click', function(){
+    clearTimeout(changeMe);
+    console.log("Stopped it");
+  })
+
+</script>
+</html>
