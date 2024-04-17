@@ -16,6 +16,7 @@ Object literal
 - Classes
 - Instances (new, this)
 
+<!-- new gives us a new copy so function dont overwrite -->
 
 ## 4 pillars
 Abstraction
